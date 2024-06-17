@@ -1,0 +1,74 @@
+/* PaymentPage.css */
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.details-and-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin-bottom: 20px; /* Add some space between sections */
+}
+
+@media screen and (min-width: 768px) {
+  .details-and-qr {
+    flex-direction: row;
+  }
+}
+
+.receiver-details,
+.qr-code {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Add some space between sections */
+}
+
+.receiver-details h2,
+.qr-code h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.receiver-details p,
+.qr-code p {
+  margin: 5px 0;
+}
+
+.qr-code img {
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width of the QR code image */
+  height: 350px; /* Maintain aspect ratio */
+  margin-top: 10px;
+}
+
+.payment-instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(80, 75, 75, 0.1);
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+.payment-instruction h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.payment-instruction p {
+  margin: 5px 0;
+}
